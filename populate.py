@@ -2,8 +2,6 @@
 
 
 def populate_collections(db):
-    db['autores'].drop()
-    db['noticias'].drop()
 
     if db['autores'].count_documents({}) == 0:
         db['autores'].insert_many([
