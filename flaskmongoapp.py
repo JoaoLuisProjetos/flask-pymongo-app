@@ -28,9 +28,6 @@ except:
 
 mongo = PyMongo(app)
 
-db['autores'].drop()
-db['noticias'].drop()
-
 # Popular o banco na primeira execução
 populate_collections(db)
 
